@@ -2,15 +2,17 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]){
-    char c;
-    int i;
+    char a,b;
+    int i,j;
     
-    printf("input a number : ");
-    scanf("%c", &c);
+    printf("enter a character : ");
+    scanf("%c", &a);
     
-    i = c - '0';
+    i = a;
+    b = i + 1;
+    j = b;
 
-    printf("The input number is %i\n", i);
+    printf("The next character of %c (%i) is %c (%i)\n", a, i, b, j);
     
     system("PAUSE");
     return 0;
